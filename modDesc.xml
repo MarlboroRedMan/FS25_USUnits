@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="107" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>MRM &amp; Claude (Anthropic)</author>
+    <version>1.0.0.0</version>
+
+    <title>
+        <en>US Units</en>
+    </title>
+
+    <description>
+        <en><![CDATA[Converts all in-game fill amounts to US imperial units — no more mental math.
+
+WHAT IT CONVERTS:
+- Grain crops (wheat, corn, soybeans, barley, etc.) → Bushels (bu) using USDA standard weights
+- Forages, hay, straw, silage, root vegetables → US Short Tons (ton)
+- Fuel, water, milk, and all other liquids → US Gallons (gal)
+- Operational fluids (AdBlue, engine oil, coolant) → Hidden, as intended
+
+WHERE IT WORKS:
+- Vehicle HUD fill bars
+- Grain silo and placeable storage popups
+- Bale info displays
+
+MODDED MAPS & FILL TYPES:
+Known fill types from popular mod packs are included. Unknown modded fill types
+are auto-detected by density — grains show as bushels, heavy materials as tons,
+liquids as gallons.
+
+Multiplayer compatible.]]></en>
+    </description>
+
+    <iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="true" />
+    <extraSourceFiles>
+        <sourceFile filename="scripts/USUnitIndexMaps.lua" />
+    </extraSourceFiles>
+</modDesc>

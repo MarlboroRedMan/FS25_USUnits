@@ -1,0 +1,5 @@
+# FS25 mod — gitignore
+*.zip
+*.bak
+Thumbs.db
+desktop.ini
